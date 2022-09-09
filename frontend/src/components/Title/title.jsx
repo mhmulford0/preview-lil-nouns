@@ -7,18 +7,19 @@ import {
 } from "./style"
 
 const getTextForAuctionState = (auctionState) => {
-  switch (auctionState) {
-    case 0:
-      return "AUCTION NOT STARTED" // NOT_STARTED
-    case 1:
-      return "AUCTION ONGOING" // ACTIVE
-    case 2:
-      return "AUCTION READY" // OVER_NOT_SETTLED
-    case 3:
-      return "AUCTION OVER" // OVER_AND_SETTLED
-    default:
-      return "AUCTION STATUS UNKNOWN"
-  }
+  return "DOWN FOR MAINTENANCE"
+  // switch (auctionState) {
+  //   case 0:
+  //     return "AUCTION NOT STARTED" // NOT_STARTED
+  //   case 1:
+  //     return "AUCTION ONGOING" // ACTIVE
+  //   case 2:
+  //     return "AUCTION READY" // OVER_NOT_SETTLED
+  //   case 3:
+  //     return "AUCTION OVER" // OVER_AND_SETTLED
+  //   default:
+  //     return "AUCTION STATUS UNKNOWN"
+  // }
 }
 
 const Title = ({ auctionState }) => {

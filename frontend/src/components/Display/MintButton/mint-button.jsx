@@ -59,7 +59,7 @@ const MintButton = ({ auctionState, nextBlockNumber, readIsFetching }) => {
           waitIsFetching ||
           readIsFetching ||
           isWriteLoading ||
-          auctionState !== 2
+          auctionState !== 2 || false
         }
         onClick={handleButtonClicked}
       >
