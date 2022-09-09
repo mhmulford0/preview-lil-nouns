@@ -1,0 +1,31 @@
+{
+  "name": "lil-nouns-preview",
+  "version": "1.0.0",
+  "description": "A react app that displays the next Lil Noun to be minted if it were to start the auction.",
+  "scripts": {
+    "build": "npm run build-contracts && npm run build-frontend",
+    "build-contracts": "cd contracts && npm run build",
+    "build-frontend": "cd frontend && npm run build",
+    "console": "cd contracts && npm run console",
+    "copy-deploy-artifacts": "cp -R ./contracts/deployments/ ./frontend/src/config/contracts/",
+    "deploy": "npm run build-contracts && cd contracts && npm run deploy && cd .. && npm run copy-deploy-artifacts && echo 'Deploy complete.'",
+    "deploy-goerli": "cd contracts && npm run deploy-goerli && cd .. && npm run copy-deploy-artifacts",
+    "deploy-mainnet": "cd contracts && npm run deploy-mainnet && cd .. && npm run copy-deploy-artifacts",
+    "install": "cd contracts && echo 'Installing contract dependencies...' && npm install && echo 'Installing frontend dependencies...' && cd ../frontend && npm install && echo 'done.'",
+    "prettier": "cd contracts && npm run prettier && cd ../frontend && npm run prettier",
+    "start-frontend": "cd frontend && npm run start",
+    "start-rpc": "cd contracts && npm run start-rpc",
+    "test-frontend": "cd frontend && npm run test",
+    "test-contracts": "cd contracts && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nvonpentz/lil-nouns-preview.git"
+  },
+  "author": "Nick von Pentz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nvonpentz/lil-nouns-preview/issues"
+  },
+  "homepage": "https://github.com/nvonpentz/lil-nouns-preview#readme"
+}

@@ -1,0 +1,8 @@
+{
+  "short_name": "Preview Lil Nouns",
+  "name": "Preview Lil Nouns",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
